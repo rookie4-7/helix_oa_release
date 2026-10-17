@@ -1,14 +1,37 @@
-# Helix: GBP/USD Backtest Runner
+# Helix: Systematic GBP/USD Trading Research and Strategy Engine
 
-A Python research backtester with an Excel for Mac control panel. It evaluates
-London-session breakout and retracement setups against M15 candles and M1
-mid/bid/ask execution data, records trade and signal audits, and writes run
-archives and workbook reports.
+Helix is a systematic GBP/USD trading project covering rule-based strategy
+development, market-structure analysis, simulated trade execution, and risk and
+performance evaluation. It combines a versioned Python strategy engine with an
+Excel for Mac interface for configuring, running, and reviewing experiments.
+Historical backtesting is one component of this wider research workflow.
 
-This is the release copy of a research project, not a live trading system or a
-claim of proven alpha. The included workbook selects **Mark 4 v0.1.0**. Trading
-rules and Strategy_Params are preserved from the research version. The
-2022-2024 period has been used for development and is not an untouched holdout.
+The strategy focuses on London-session breakout and retracement setups, using
+M15 candles for setup analysis and M1 mid/bid/ask data for execution simulation.
+The wider project also includes manual-trade comparison, shadow tests, and
+statistical evaluation of proposed rules. This public repository contains the
+release engine and its supporting tools; private research documents, datasets,
+manual trade logs, and historical experiment archives are not included.
+
+This is a research and simulation system. **Live broker execution is not
+implemented**, and the project makes no claim of proven alpha. The included
+workbook selects **Mark 4 v0.1.0**. Trading rules and Strategy_Params are
+preserved from the research version. The 2022-2024 period has been used for
+development and is not an untouched holdout.
+
+## Project Components
+
+| Component | Responsibility |
+| --- | --- |
+| Strategy engine | Detect London-session breakout and retracement setups using Asia ranges and body-based pivots. |
+| Market structure and context | Evaluate pivot, price-cluster, and trendline obstacles, with configurable contextual exceptions. |
+| Execution simulation | Model entries, stops, targets, spread-aware fills, and news/session forced exits using historical price data. |
+| Risk and performance analysis | Report trade returns in R, win rate, profit factor, Sharpe ratios, drawdown, and equity curves. |
+| Data validation | Check input data, including missing bars, spreads, and timezone consistency, and expose diagnostic reports. |
+| Experiment controls and audit | Configure versioned parameters through Excel, preserve run archives, and record trade and signal decisions for review. |
+
+The release also includes regression tests and a synthetic-data demonstration
+so the software workflow can be checked without distributing private prices.
 
 ## Quick Start on macOS
 
