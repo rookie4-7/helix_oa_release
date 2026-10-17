@@ -1,0 +1,89 @@
+{
+  "engine_version": "Mark3-0.1.1",
+  "engine_profile": "MARK_3_CURRENT_ENGINE",
+  "status": "Frozen selected Mark 3 research configuration; integrated engine; alpha unconfirmed",
+  "recorded_date": "2026-10-10",
+  "base_engine": "Mark2-0.2.0",
+  "mark_2_preserved": true,
+  "selected_variant": "combined_24m_ignore_pivots",
+  "future_refinement": "Mark 4",
+  "trade_validation_years": [
+    2022,
+    2023
+  ],
+  "reference_results": "mark_3/combined_expiry_ignore_pivots_shadow_20261010/results/20261010_031710",
+  "validation": {
+    "engine_version": "Mark3-0.1.0",
+    "trade_years": [
+      2022,
+      2023
+    ],
+    "candidate_signals": 737,
+    "candidate_lines": 1031,
+    "eligible_lines": 88,
+    "witnesses": 166,
+    "pivot_waiver_lines": 14,
+    "trades": 138,
+    "net_r": 5.051226317369307,
+    "yearly": {
+      "2022": {
+        "trades": 67,
+        "net_r": 6.978663729950792
+      },
+      "2023": {
+        "trades": 71,
+        "net_r": -1.9274374125814862
+      }
+    },
+    "all_line_decisions_match": true,
+    "off_switch_matches_parent": true,
+    "execution_matches_shadow": true,
+    "causal_prefix_passed": true,
+    "regenerated_candidates_identical": true
+  },
+  "reference_results_status": "Pre-pivot-merge Mark3-0.1.0 results; not rerun after the registration repair",
+  "pivot_registration": "Adjacent M15 candles sharing their turning body price at previous close = next open form one pivot at the first candle. Highs and lows remain separate; each scale retains its actual confirmation close; later confirmation never re-arms a consumed pivot.",
+  "unit_tests_passed": 108,
+  "pivot_merge_validation": {
+    "targeted_engine_tests": 14,
+    "atlas_detector_tests": 4,
+    "atlas_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "atlas_candles": 124536,
+    "ohlc_unchanged": true,
+    "cluster_score_checks": 223917,
+    "causal_prefix_checked": true,
+    "trading_backtest_rerun": false
+  },
+  "workbook_profile": "MARK_3_CURRENT_ENGINE",
+  "workbook_filename": "Backtest_Model_Runner.xlsm",
+  "files": {
+    "README.txt": "15341201fbc1d815acc037e2ff49dec0292735d1a8c67b388dc2da092a8220ce",
+    "backtest_engine.py": "a2ed5edb5ec7e290893a489c827af960144b6a3b788b6c0dbd57f342f4afaa08",
+    "config.py": "fb592f52af393ff0ad63f00de277e1260e22ce3ab0cda4f52223ef2ee71c732f",
+    "context_filters.py": "c2b08a99d367be4862fd2f2d01524dc48277c3c935cd4a769cf905f0fa5119af",
+    "excel_runner.py": "2e5fc37aa3ee70d6321f3fd8b02bd17459c909fceba419bf997bc16fb702184e",
+    "frozen_params.json": "621d139bac0cca9bcbfe25dd2eb9199b737429828bdd979efe5f5f05443db375",
+    "pivot_logic.py": "1b1cb9338e73e13368fdbd50176f62b3e52644d859487973ed821a6816bfd504",
+    "repeated_visit_logic.py": "5b6c7e05815494a7c41df8f911a07461222bd54e5743708ccc20a77fbbf8e0a8",
+    "runtime.py": "7fbc5aad9ea48e670fdfdf152c30ee47b454b9da59c67dd86e8e30da23fcb150",
+    "setup_logic.py": "150e39307d3d3992f411b92cb4240229bd8ab37ee01662633a918cc8ae9e2454",
+    "strategy_logic.py": "706673091d43a95d02646a957454853a06221ab8343bc61cea7268193c127a79",
+    "test_context_filters.py": "77fd7583d17d5acc2e7674cde7aefcbed195d50604664295494d269c668973b9",
+    "test_ibos_pivot.py": "216eb1a8580d4a6e0408174f51c103106d50e7e3e3754dcdc32517f4910c01c0",
+    "test_mark2.py": "6d168c3a879b497c8d6caab70f51f59c5ec5d5fffff19f70bdacf4bcf9d9754b",
+    "test_pivot_turn_merge.py": "c9bc55929df408ded8011dfba69538cdd0af7527c0473fd54ca2c4f21e03a314",
+    "test_repeated_visit_exception.py": "9624e357b39ad97df19078440c791e546bcf8efa0d95126c9876134b92f0eda0",
+    "test_runner_dispatch.py": "2ce9d525bff7de67c96561b41f5c649439c415e8b79572316d69cc8d5a6fef8f",
+    "test_visit_detector.py": "0f6fe223b4f592ccb2f4d94a5ae287c62c3e716db46798fa3ff0d5addc8fd473",
+    "test_workbook_params.py": "9241d5eca3890c5b216839861bb8fc0658530c341f508cd3ff8c9b336bbae5bb",
+    "visit_detector.py": "1676731d1fb7903dd4ae2889c6bf03d43a54fccd242ca98514d2e9868905297a",
+    "workbook_controls.py": "3e89caf9b6c2efc8fbd00694f136f54e4e40a2af24a65e92491743eba080aac7",
+    "workbook_params.py": "5cccc17410a5c91fbc70c24f60d3dbe31f0b956dc634b4750fa3b2fdb65fc8a1"
+  }
+}

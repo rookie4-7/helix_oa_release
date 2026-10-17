@@ -1,0 +1,5 @@
+# Same workbook libraries as the verified runner before the Python migration.
+-r ../requirements.txt
+openpyxl==3.1.5
+et_xmlfile==2.0.0
+lxml==6.1.1

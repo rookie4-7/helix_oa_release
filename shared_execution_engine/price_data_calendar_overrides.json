@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "description": "Reporting only. Add independently verified broker holiday/maintenance closures with symbol, start_utc, end_utc, reason and source. UTC timestamps must include Z or +00:00. No holiday is inferred from missing prices.",
+  "regular_schedule_reference": "https://www.oanda.com/us-en/trading/hours-of-operation/",
+  "reference_checked_on": "2026-10-17",
+  "historical_calendar_complete": false,
+  "closures": []
+}

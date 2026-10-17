@@ -1,0 +1,173 @@
+{
+  "engine_version": "Mark2-0.2.0",
+  "date": "2026-10-08",
+  "status": "Frozen no-expiry research configuration; alpha unconfirmed",
+  "engine_profile": "MARK_2_CURRENT_ENGINE",
+  "base_engine_version": "0.8.0",
+  "rule_document": "Current engine vs BC engine Rule.docx",
+  "rule_document_sha256": "a45868379edb10713c7eb8844787503cfd3414a906dd5e5d10ae18aa4f456a8a",
+  "historical_pivots": "context only; never setup; current-day break in same run required",
+  "files": {
+    "README.md": "bea9c93fef01df28d9b7917643edf617cde9caf85495b6e3d0e7f54dbfb73d94",
+    "backtest_engine.py": "fc4adcecb45ef65eb6372fe8a2022a57152668d4b7d171386b3d622cfce7b405",
+    "config.py": "33666b42c8bab4c5bf7721f952a20d8daa15cf9021f37b8476423e1d9ed4d3c7",
+    "context_filters.py": "aa2c93ef8c8b7800ddc875cdb22ee789360af7c0a576a552a0e2872ff2ed9596",
+    "excel_runner.py": "2e5fc37aa3ee70d6321f3fd8b02bd17459c909fceba419bf997bc16fb702184e",
+    "frozen_params.json": "74e06a56e7333cd46a9638617ad77474052feeeb7b6d5ef36487b2056e2e3927",
+    "pivot_logic.py": "a3192c393bef066e2cc2763a4ffdd132a69bec3b3b8b9838df203912d4ab41be",
+    "runtime.py": "0b0c4519cbdd6dd1666def85e3c2220b6751afbc59b19a15035c6c22dacf3119",
+    "setup_logic.py": "150e39307d3d3992f411b92cb4240229bd8ab37ee01662633a918cc8ae9e2454",
+    "strategy_logic.py": "8d678ddd0ff2db4e958aca3eec3c3b4711e07b5639992139ce91c51b5f4c4f31",
+    "test_context_filters.py": "b6cf93a497e6c5df0568469a7c03f57baf60cec13c84fc1b6c9f551710382c4f",
+    "test_ibos_pivot.py": "216eb1a8580d4a6e0408174f51c103106d50e7e3e3754dcdc32517f4910c01c0",
+    "test_mark2.py": "5a5e8de53049e174baea87cedd3bdb07542695432bac62dac4f6fc9e49188802",
+    "test_workbook_params.py": "fc5791e64c7b2a4a89de7e02a43ba41fd525e7eea5b10f8c35ceb6e8618bcec5",
+    "workbook_controls.py": "266b112ed94ef6370c3e97460dadc236208da9eda06863571f5ddbedea201aa7",
+    "workbook_params.py": "86dd78fe11354ed77e5cdaaea70d2ad1d594cee1fc36ec3c0e0a9883fc2627c2"
+  },
+  "originals_unchanged": {
+    "Backtest_Model_v1\u2014\u2014runner.xlsm": "4a525a259eeeca632f92a23476803f7b8e345368d768dcf40ff5c6489da70a44",
+    "base_setup_engine/strategy_logic.py": "288ea977541cef5d0403f41de96b02a299e514902446fbd7be60f5c22b821452",
+    "base_setup_engine/setup_logic 2.py": "6db90dea41e5d79ae7a85d32985d7429d3f98176abd1eef38291ac0252dd18f5",
+    "shared_execution_engine/trade_simulator.py": "5681c8044da100bb138e9b27e1219a6ee069013f1c1803f8b6f6d7ca8739c036",
+    "broad_candidate_engine/config.py": "5ff0826c16dce97287d035a9f9ae7fe2200119b6ca03e9c8ba7e325e813f6146",
+    "broad_candidate_engine/engine.py": "a73058d2c1d8f340000cacad74729b0dc249ed613f98000be4a3f99d9731b715",
+    "mark_2/reconstruct_mark_2_2022.py": "f9d36dd8517d941ae907512576a0a7ff9bf210e8794abc05154a54e256729d59"
+  },
+  "verification": {
+    "unit_tests_passed": 61,
+    "workbook_save_roundtrip": "passed",
+    "2022": {
+      "engine_version": "Mark2-0.2.0",
+      "trade_years": [
+        2022
+      ],
+      "obstacle_context_years": [
+        2020,
+        2021
+      ],
+      "switches": {
+        "pivots": true,
+        "clusters": true,
+        "reject_22_only": true
+      },
+      "expiry_months": 0,
+      "baseline": {
+        "trades": 162,
+        "wins": 40,
+        "losses": 122,
+        "breakeven": 0,
+        "win_rate": 0.24691358024691357,
+        "net_r": -27.172005053177596,
+        "average_r": -0.1677284262541827,
+        "exploratory": false
+      },
+      "filtered": {
+        "trades": 63,
+        "wins": 19,
+        "losses": 44,
+        "breakeven": 0,
+        "win_rate": 0.30158730158730157,
+        "net_r": 1.156775110687155,
+        "average_r": 0.018361509693446906,
+        "exploratory": false
+      },
+      "matches": 25,
+      "extras": 38,
+      "misses": 10,
+      "baseline_records_exact": 301,
+      "pivot_decisions_exact": 509,
+      "cluster_decisions_exact": 509,
+      "cluster_scores_exact": 23577,
+      "conditional_22_rejection_exact": true,
+      "retained_execution_unchanged": true
+    },
+    "workbook": {
+      "engine_version": "Mark2-0.2.0",
+      "modified_package_parts": [
+        "xl/styles.xml",
+        "xl/worksheets/sheet1.xml",
+        "xl/worksheets/sheet3.xml"
+      ],
+      "macros_and_buttons_unchanged": true,
+      "unrelated_values_and_formulas_unchanged": true,
+      "parameter_loading": "passed",
+      "filename_unchanged": true
+    },
+    "other_trade_years_run": false
+  },
+  "workbook": "Backtest_Model_Runner.xlsm",
+  "workbook_sha256": "c9e5519d8a76bec75557048b43f0179917c3df41a4aacecc0b950ddf1195ad3c",
+  "engine_display_cell": "Runner!B2",
+  "ibos_pivot_requirement": "Existing IBOS plus confirmed current-London-day body-pivot break in same run during London setup window; no entry before both conditions",
+  "previous_version_verification": {
+    "engine_version": "Mark2-0.1.1",
+    "date": "2026-10-07",
+    "verification": {
+      "engine_rule_tests_passed": 35,
+      "workbook_validation_test": "passed",
+      "preexisting_workbook_layout_test_failures": "2 checks expect Strategy_Params row 8 hidden; reproduced with unmodified engine; workbook left unchanged",
+      "targeted_real_price_test": {
+        "engine_version": "Mark2-0.1.1",
+        "parameters": {
+          "setup_break_pips": 0.1
+        },
+        "signal_count": 1,
+        "filled_trades": 1,
+        "signal_time": "2022-09-09 10:15:00",
+        "entry_time": "2022-09-09 10:38:00",
+        "planned_entry": 1.161327,
+        "actual_entry": 1.161217,
+        "run_count": 2,
+        "anchor_pivots": [
+          {
+            "id": "Sell_2022-09-09T09:00:00",
+            "side": "Sell",
+            "level": 1.16114,
+            "formed_i": 612,
+            "formed_time": "2022-09-09 09:00:00",
+            "day": "2022-09-09",
+            "confirmed_i": 614,
+            "scale": 2,
+            "scales": [
+              2,
+              3
+            ],
+            "break_time": "2022-09-09 10:15:00"
+          },
+          {
+            "id": "Sell_2022-09-09T09:15:00",
+            "side": "Sell",
+            "level": 1.16114,
+            "formed_i": 613,
+            "formed_time": "2022-09-09 09:15:00",
+            "day": "2022-09-09",
+            "confirmed_i": 615,
+            "scale": 2,
+            "scales": [
+              2,
+              3
+            ],
+            "break_time": "2022-09-09 10:15:00"
+          }
+        ],
+        "no_live_line_before_anchor": true,
+        "existing_setup_definitions_unchanged": true
+      },
+      "full_backtest_rerun": false,
+      "existing_ibos_detector_unchanged": true,
+      "workbook_parameters_unchanged": true
+    },
+    "workbook_sha256": "0d23f0641018aef4ad52673660c0afa7b1aacb1c62caa8d50d9593e55d605cea"
+  },
+  "freeze_timestamp_london": "2026-10-08T02:46:19.355858+01:00",
+  "frozen_parameter_file": "frozen_params.json",
+  "filters": {
+    "pivot_obstacles": "5/5, original body box and cancellation, no expiry",
+    "price_clusters": "6 M15 candles, 96 earlier reference, equal weights, wick score >50, body box, close cancellation, no expiry",
+    "setup_rejection": "2/2-only actual setup pivots; preserve independent Asia or actual 3/3 or 5/5 alternatives"
+  },
+  "candidate_semantics": "Preserve v0.1.1 candidate consumption, line lifetimes and entry-touch freezes; gate lines before execution; no replacement setups",
+  "previous_engine_snapshot": "archive/mark_2_engine_versions/Mark2-0.1.1_before_20261008_024619",
+  "frozen_snapshot": "archive/mark_2_engine_versions/Mark2-0.2.0_frozen_20261008_024619"
+}
